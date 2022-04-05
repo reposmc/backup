@@ -1,31 +1,31 @@
 {
-    "name": "leolopez/backup",
-    "description": "Creates a backup of the database.",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Leonel Lopez",
-            "email": "lalopez@cultura.gob.sv"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "microsoft/microsoft-graph": "^1.59"
-    },
-    "autoload": {
-        "psr-4": {
-            "Leolopez\\Backup\\": "src/"
-        }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "\\Leolopez\\Backup\\BackupServiceProvider"
-            ],
-            "aliases": {
-                "Backup": "Leolopez\\Backup\\Src\\Facades\\Backup"
-            }
-        }
+  "name": "leolopez/backup",
+  "description": "Creates a backup of the database.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Leonel Lopez",
+      "email": "lalopez@cultura.gob.sv"
     }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "microsoft/microsoft-graph": "^1.59"
+  },
+  "autoload": {
+    "psr-4": {
+      "Leolopez\\Backup\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "\\Leolopez\\Backup\\BackupServiceProvider"
+      ],
+      "aliases": {
+        "Backup": "Leolopez\\Backup\\Src\\Facades\\Backup"
+      }
+    }
+  }
 }
