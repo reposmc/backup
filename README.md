@@ -30,4 +30,4 @@ Add the Facade to your `config/app.php` into `aliases` section,
 
 Run the following command to publish config file,
 
-    php artisan vendor:publish --tag=Leolopez\Backup\BackupServiceProvider
+    php artisan vendor:publish --provider="Leolopez\Backup\BackupServiceProvider"
