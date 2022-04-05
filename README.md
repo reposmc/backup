@@ -31,3 +31,10 @@ Add the Facade to your `config/app.php` into `aliases` section,
 Run the following command to publish config file,
 
     php artisan vendor:publish --provider="Leolopez\Backup\BackupServiceProvider"
+
+## Register the crontab
+Create a task to run repitedly.
+
+    crontab -e
+
+    0 1 * * * /usr/bin/php /var/www/html/project/artisan backup:create
