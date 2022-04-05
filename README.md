@@ -43,7 +43,7 @@ Add the credentials of your microsoft account into `config/backup.php`.
     'password' => '',
 
 ## Register the crontab
-Create a task to run repitedly.
+Run the task every day at 1am.
 
     crontab -e
 
