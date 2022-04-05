@@ -7,3 +7,25 @@
 [![PHP Version Require](http://poser.pugx.org/leolopez/backup/require/php)](https://packagist.org/packages/leolopez/backup)
 
 ## This package will create a backup of the database and will upload a copy to OneDrive.
+
+## Installation
+
+Install the package by the following command,
+
+    composer require leolopez/backup
+    
+## Add Facade
+
+Register the Service Provider.
+    
+    Leolopez\Backup\BackupServiceProvider::class
+
+Add the Facade to your `config/app.php` into `aliases` section,
+
+    'Backup' => \Leolopez\Backup\Facades\Backup::class,
+
+## Publish the Assets
+
+Run the following command to publish config file,
+
+    php artisan vendor:publish --tag=Leolopez\Backup\BackupServiceProvider
