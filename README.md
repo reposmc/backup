@@ -14,11 +14,13 @@ Install the package by the following command,
 
     composer require leolopez/backup
     
-## Add Facade
+## Register the Service Provider
 
-Register the Service Provider.
+Add the provider in `config/app.php` int `providers` section.
     
     Leolopez\Backup\BackupServiceProvider::class
+    
+## Add Facade
 
 Add the Facade to your `config/app.php` into `aliases` section,
 
