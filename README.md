@@ -31,6 +31,16 @@ Add the Facade to your `config/app.php` into `aliases` section,
 Run the following command to publish config file,
 
     php artisan vendor:publish --provider="Leolopez\Backup\BackupServiceProvider"
+    
+## Register your credentials
+
+Add the credentials of your microsoft account into `config/backup.php`.
+
+    'tenant_id' => '',
+    'client_id' => '',
+    'client_secret' => '',
+    'username' => '',
+    'password' => '',
 
 ## Register the crontab
 Create a task to run repitedly.
