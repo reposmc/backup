@@ -1,6 +1,9 @@
 ## Creates a backup and uploads it to onedrive.
 
-[![Issues](https://img.shields.io/github/issues/leollopezMC/backup.svg?style=flat-square)](https://img.shields.io/github/issues/leolopezMC/backup)
-[![Stars](	https://img.shields.io/github/stars/leollopezMC/backup.svg?style=flat-square)](https://github.com/leollopezMC/backup/stargazers)
+[![Latest Stable Version](http://poser.pugx.org/leolopez/backup/v)](https://packagist.org/packages/leolopez/backup) 
+[![Total Downloads](http://poser.pugx.org/leolopez/backup/downloads)](https://packagist.org/packages/leolopez/backup) 
+[![Latest Unstable Version](http://poser.pugx.org/leolopez/backup/v/unstable)](https://packagist.org/packages/leolopez/backup) 
+[![License](http://poser.pugx.org/leolopez/backup/license)](https://packagist.org/packages/leolopez/backup) 
+[![PHP Version Require](http://poser.pugx.org/leolopez/backup/require/php)](https://packagist.org/packages/leolopez/backup)
 
 ## This package will create a backup of the database and will upload a copy to OneDrive.
