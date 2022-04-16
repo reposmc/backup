@@ -32,13 +32,13 @@ Run the following command to publish config file,
     
 ## Register your credentials
 
-Add the credentials of your microsoft account into `config/backup.php`.
+Add the credentials of your microsoft account into `.env` file.
 
-    'tenant_id' => '',
-    'client_id' => '',
-    'client_secret' => '',
-    'username' => '',
-    'password' => '',
+    TENANT_ID='-----' 
+    CLIENT_ID='-----'
+    CLIENT_SECRET='-----'
+    USERNAME='-----'
+    PASSWORD='-----'
 
 ## Register the crontab
 Run the task every day at 1am.
