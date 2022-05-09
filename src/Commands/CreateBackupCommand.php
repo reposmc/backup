@@ -82,7 +82,7 @@ class CreateBackupCommand extends Command
         $graph->setAccessToken($user_accessToken);
 
         $graph->createRequest("PUT", "/me/drive/root/children/".env('DB_DATABASE').".sql/content")
-        ->upload($dirFile.env('DB_DATABASE').".sql");
+        ->upload($dirFile.env('DB_DATABASE').date('d-m-Y').".sql");
 
         $this->info('File uploaded to OneDrive successfully.');
 
