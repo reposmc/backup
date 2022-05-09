@@ -81,7 +81,7 @@ class CreateBackupCommand extends Command
         $graph = new Graph();
         $graph->setAccessToken($user_accessToken);
 
-        $date = date('d-m-Y H:i:s');
+        $date = date('dmYHi');
         $fileName = env('DB_DATABASE').$date.".sql";
         $graph->createRequest("PUT", "/me/drive/root/children/".env('DB_DATABASE').".sql/content")
         ->upload($dirFile.$date);
