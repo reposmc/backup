@@ -42,9 +42,11 @@ class CreateBackupCommand extends Command
     public function handle()
     {
         $dirFile = base_path()."/storage/app/";
+        $date = date("d_m_Y");
+        $fileName = env('DB_DATABASE')."_".$date.".sql";
 
         try {
-            $command = "mysqldump --user=".env('DB_USERNAME')." --password='".env('DB_PASSWORD')."' --host=".env('DB_HOST')." ".env('DB_DATABASE')." >  $dirFile".env('DB_DATABASE').".sql";
+            $command = "mysqldump --user=".env('DB_USERNAME')." --password='".env('DB_PASSWORD')."' --host=".env('DB_HOST')." ".env('DB_DATABASE')." >  $dirFile$fileName";
             $returnVar = null;
             $output  = null;
 
@@ -83,8 +85,8 @@ class CreateBackupCommand extends Command
 
         $date = date('dmYHi');
         $fileName = env('DB_DATABASE').$date.".sql";
-        $graph->createRequest("PUT", "/me/drive/root/children/".env('DB_DATABASE').".sql/content")
-        ->upload($dirFile.$date);
+        $graph->createRequest("PUT", "/me/drive/root/children/$fileName/content")
+        ->upload($dirFile.$fileName);
 
         $this->info('File uploaded to OneDrive successfully.');
 
